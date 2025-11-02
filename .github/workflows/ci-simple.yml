@@ -41,9 +41,7 @@ jobs:
           DOCKER_USER_LOWER=${DOCKER_USER,,}
           echo "Docker user lower: $DOCKER_USER_LOWER"
           
-          cd microservice-a/
-          
-          docker build -t ghcr.io/$DOCKER_USER_LOWER/microservice-a:latest -f microservice-a/docker/Dockerfile .
+          docker build -t ghcr.io/$DOCKER_USER_LOWER/microservice-a:latest -f microservice-a/docker/Dockerfile microservice-a/
           
           docker push ghcr.io/$DOCKER_USER_LOWER/microservice-a:latest
 
@@ -76,8 +74,6 @@ jobs:
           DOCKER_USER_LOWER=${DOCKER_USER,,}
           echo "Docker user lower: $DOCKER_USER_LOWER"
           
-          cd microservice-b/
-          
-          docker build -t ghcr.io/$DOCKER_USER_LOWER/microservice-b:latest -f microservice-b/docker/Dockerfile .
+          docker build -t ghcr.io/$DOCKER_USER_LOWER/microservice-b:latest -f microservice-b/docker/Dockerfile microservice-b/
           
           docker push ghcr.io/$DOCKER_USER_LOWER/microservice-b:latest
