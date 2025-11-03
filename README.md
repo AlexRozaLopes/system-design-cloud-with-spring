@@ -18,3 +18,7 @@ sequenceDiagram
     API_Gateway-->>Client: Retorna resposta ao cliente
 
 ```
+
+[![MICROSERVICE-A](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml/badge.svg)](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml)
+[![MICROSERVICE-B](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml/badge.svg)](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml)
+[![MICROSERVICE-SERVICE-DISCOVERY](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml/badge.svg)](https://github.com/AlexRozaLopes/system-design-cloud-with-spring/actions/workflows/ci-simple.yml)
