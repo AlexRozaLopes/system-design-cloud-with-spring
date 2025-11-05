@@ -13,7 +13,7 @@ env:
 
 jobs:
   build-a:
-    uses: AlexRozaLopes/my-actions-reusable/actions/workflows/build-and-create-docker-image-java.yml@main
+    uses: AlexRozaLopes/my-actions-reusable/.github/workflows/build-and-create-docker-image-java.yml@main
     permissions: write-all
     with:
       DOCKER_IMAGE_NAME: microservice-a
