@@ -8,9 +8,6 @@ on:
 permissions:
   packages: write
 
-env:
-  DOCKER_USER: ${{ github.repository_owner }}
-
 jobs:
   build-a:
     uses: AlexRozaLopes/my-actions-reusable/.github/workflows/build-and-create-docker-image-java.yml@main
@@ -27,6 +24,7 @@ jobs:
       DOCKER_IMAGE_NAME: microservice-b
       DOCKER_FILE_PATH: microservice-b/docker
       APPLICATION_PATH: microservice-b
+
   build-service-discovery:
     uses: AlexRozaLopes/my-actions-reusable/.github/workflows/build-and-create-docker-image-java.yml@main
     permissions: write-all
